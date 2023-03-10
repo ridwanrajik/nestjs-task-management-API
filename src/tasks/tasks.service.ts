@@ -60,9 +60,9 @@ export class TasksService {
     //     return found
     // }
 
-    // createTask(createTaskDto: CreateTaskDto): Promise<Task> {
-    //     return this.tasksRepository.createTask(createTaskDto);
-    // }
+    createTask(createTaskDto: CreateTaskDto): Promise<Task> {
+        return this.tasksRepository.createTask(createTaskDto);
+    }
 
     // createTask(createTaskDto: CreateTaskDto): Task {
     //     const { title, description } = createTaskDto;
