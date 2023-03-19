@@ -13,8 +13,8 @@ export class TasksService {
         private readonly tasksRepository: TaskRepository
     ) {}
 
-    getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
-        return this.tasksRepository.getTasks(filterDto);
+    getTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]> {
+        return this.tasksRepository.getTasks(filterDto, user);
     }
     // private tasks: Task[] = [];
 
